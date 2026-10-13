@@ -1,0 +1,13 @@
+test,passed,detail
+Saved model exists,True,
+Metadata exists,True,
+Streamlit application exists,True,
+Threshold is finite,True,
+Threshold is within 0 and 1,True,
+Risk score is within 0 and 1,True,score=1.247177334332068e-05
+Prediction is reproducible,True,
+Zero amount is handled,True,score=0.0001415628518125315
+Missing numeric value is handled,True,score=1.247177334332068e-05
+Unseen category is handled,True,score=8.178996192723817e-06
+Explainability feature names are readable,True,[]
+Explainability output exists,True,

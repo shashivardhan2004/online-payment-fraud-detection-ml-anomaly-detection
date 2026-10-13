@@ -1,0 +1,2 @@
+rows,columns,legitimate,fraud,fraud_rate,missing_values,duplicate_rows,start_date,end_date
+1296675,23,1289169,7506,0.005788651743883394,0,0,2019-01-01 00:00:18,2020-06-21 12:13:37

@@ -1,0 +1,20 @@
+{
+    "run_mode": "CHECK",
+    "seed": 42,
+    "sampling_ratio": 0.1,
+    "cv_splits": 2,
+    "cv_sample_n": 60000,
+    "selected_model": "Random Forest",
+    "selected_strategy": "none",
+    "selected_parameters": {
+        "model__n_estimators": 250,
+        "model__min_samples_leaf": 8,
+        "model__max_features": 0.7,
+        "model__max_depth": 14
+    },
+    "selected_threshold": 0.3270524647765513,
+    "selection_basis": "Chronological validation PR-AUC with F1 as the secondary metric",
+    "threshold_basis": "Maximum F1 on chronological validation data",
+    "official_test_file_loaded_only_after_model_freezing": true,
+    "reported_test_model": "Same fitted development model used during threshold selection and final hold-out evaluation"
+}

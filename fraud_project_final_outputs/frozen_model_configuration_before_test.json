@@ -1,0 +1,16 @@
+{
+    "run_mode": "CHECK",
+    "seed": 42,
+    "selected_model": "Random Forest",
+    "selected_strategy": "none",
+    "selected_parameters": {
+        "model__n_estimators": 250,
+        "model__min_samples_leaf": 8,
+        "model__max_features": 0.7,
+        "model__max_depth": 14
+    },
+    "selected_threshold": 0.3270524647765513,
+    "selection_basis": "Chronological validation PR-AUC with F1 as secondary metric",
+    "threshold_basis": "Maximum F1 on chronological validation",
+    "official_test_file_loaded_before_freezing": false
+}

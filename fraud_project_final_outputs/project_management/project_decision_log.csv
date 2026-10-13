@@ -1,0 +1,14 @@
+decision,reason
+Keep the supplied train and test files separate,I wanted to preserve the chronological hold-out design.
+Do not load the official test file before model freezing,I wanted to protect the independence of my final test evaluation.
+Remove direct identifiers,I wanted the models to learn transaction behaviour rather than customer identity.
+Compare four imbalance strategies,I did not assume that one imbalance method would always be best.
+Apply sampling only inside model pipelines,I wanted to reduce the risk of data leakage.
+Tune all supervised models,I wanted a fair comparison between the supervised algorithms.
+Reject tuning if PR-AUC becomes worse,I did not want tuning to automatically replace a stronger original model.
+Choose the final model using chronological validation,I wanted model selection to happen before opening the test dataset.
+Use the same fitted validation model for final test evaluation,I wanted the selected threshold to remain consistent with the exact fitted model.
+Add feature-engineering ablation,I wanted to test whether my engineered features actually added predictive value.
+Use fraud risk score rather than fraud probability,I do not claim that the raw classifier score is a calibrated banking probability.
+Add bootstrap confidence intervals,I wanted to show uncertainty around my final model metrics.
+Add false-positive and false-negative analysis,I wanted to understand where my selected model still makes mistakes.

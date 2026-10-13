@@ -1,0 +1,3 @@
+dataset,fraud_rate
+Training,0.005788651743883394
+Official Test,0.0038598644278853163

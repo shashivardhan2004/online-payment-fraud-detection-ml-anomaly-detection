@@ -1,0 +1,11 @@
+test_id,test,expected_result,actual_result,pass_fail,evidence
+T01,Valid transaction,Risk score and classification are displayed,,,
+T02,Negative transaction amount,The interface blocks the input,,,
+T03,Age below 18,The interface blocks the input,,,
+T04,Age above 120,The interface blocks the input,,,
+T05,Repeated identical input,The same risk score is returned,,,
+T06,Model Performance tab,Performance metrics are displayed,,,
+T07,Explainability tab,Readable feature importance is displayed,,,
+T08,About tab,Model details and limitations are displayed,,,
+T09,CHECK mode warning,The warning is visible,,,
+T10,Application startup,The application loads without an error,,,

@@ -1,0 +1,22 @@
+stage,action,result,runtime_seconds
+Data,Load training dataset,Completed,10.892650604248047
+Features,Create model features,Completed,1.3907756805419922
+Initial CV,Logistic Regression + none,PR-AUC=0.203585,0.8079757690429688
+Initial CV,Logistic Regression + class_weight,PR-AUC=0.153678,0.9589433670043945
+Initial CV,Logistic Regression + undersampling,PR-AUC=0.221038,0.5644485950469971
+Initial CV,Logistic Regression + smote,PR-AUC=0.201039,2.4641077518463135
+Initial CV,Random Forest + none,PR-AUC=0.714147,12.352096557617188
+Initial CV,Random Forest + class_weight,PR-AUC=0.689078,12.71458125114441
+Initial CV,Random Forest + undersampling,PR-AUC=0.656652,2.335829257965088
+Initial CV,Random Forest + smote,PR-AUC=0.694388,20.76712965965271
+Initial CV,XGBoost + none,PR-AUC=0.746500,3.9700872898101807
+Initial CV,XGBoost + class_weight,PR-AUC=0.768713,2.675386667251587
+Initial CV,XGBoost + undersampling,PR-AUC=0.647140,1.509540319442749
+Initial CV,XGBoost + smote,PR-AUC=0.744205,6.155135631561279
+Tuning,Logistic Regression,I kept the original settings because tuning did not improve PR-AUC.,1.7532799243927002
+Tuning,Random Forest,I kept the tuned parameters because PR-AUC improved.,161.55454659461975
+Tuning,XGBoost,I kept the original settings because tuning did not improve PR-AUC.,17.547199487686157
+Validation,Logistic Regression,PR-AUC=0.210355,2.0466339588165283
+Validation,Random Forest,PR-AUC=0.861959,244.4379153251648
+Validation,XGBoost,PR-AUC=0.850353,9.186055898666382
+Official Test,Evaluate frozen models,Completed,4.578171014785767

@@ -1,0 +1,4 @@
+model,strategy,original_cv_pr_auc,tuned_cv_pr_auc,improvement,tuned_parameters_used,decision,best_search_parameters,runtime_seconds
+Logistic Regression,undersampling,0.22103817306070916,0.21399749919834904,-0.007040673862360125,False,I kept the original settings because tuning did not improve PR-AUC.,"{""model__penalty"": ""l2"", ""model__C"": 0.1}",1.7532799243927002
+Random Forest,none,0.7141470751484206,0.7643463767892968,0.05019930164087627,True,I kept the tuned parameters because PR-AUC improved.,"{""model__n_estimators"": 250, ""model__min_samples_leaf"": 8, ""model__max_features"": 0.7, ""model__max_depth"": 14}",161.55454659461975
+XGBoost,class_weight,0.7687126802791338,0.7593142978372621,-0.009398382441871633,False,I kept the original settings because tuning did not improve PR-AUC.,"{""model__subsample"": 0.7, ""model__n_estimators"": 600, ""model__max_depth"": 6, ""model__learning_rate"": 0.08, ""model__colsample_bytree"": 0.9}",17.547199487686157
